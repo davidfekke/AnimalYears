@@ -6,45 +6,26 @@ import AnimalYears
 
 class TableOfContentsSpec: QuickSpec {
     override func spec() {
-        describe("these will fail") {
+        describe("Dog Years tests") {
 
-            it("can do maths") {
-                expect(1) == 2
-            }
-
-            it("can read") {
-                expect("number") == "string"
-            }
-
-            it("will eventually fail") {
-                expect("time").toEventually( equal("done") )
+            it("Calculate Dog Years to human years") {
+                let resultYear = Convert.calculate(dogyears: 10, weight: 25)
+                expect(resultYear) == 58.48
             }
             
-            context("these will pass") {
-
-                it("can do maths") {
-                    expect(23) == 23
-                }
-
-                it("can read") {
-                    expect("🐮") == "🐮"
-                }
-
-                it("will eventually pass") {
-                    var time = "passing"
-
-                    DispatchQueue.main.async {
-                        time = "done"
-                    }
-
-                    waitUntil { done in
-                        Thread.sleep(forTimeInterval: 0.5)
-                        expect(time) == "done"
-
-                        done()
-                    }
-                }
+            it("Calculate Dog Years to human years for 1 and 78 lbs") {
+                let resultYear = Convert.calculate(dogyears: 1, weight: 78)
+                expect(resultYear) == 16.73
             }
+        }
+        
+        describe("CatYears test") {
+            
+            it("Calculate Cat Years for a cat that is 10") {
+                let result = Convert.calculate(catyears: 10)
+                expect(result) == 57.0
+            }
+            
         }
     }
 }

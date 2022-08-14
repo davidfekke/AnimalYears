@@ -1,0 +1,6 @@
+framework module AnimalYears {
+  umbrella header "AnimalYears-umbrella.h"
+
+  export *
+  module * { export * }
+}

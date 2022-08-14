@@ -1,0 +1,24 @@
+{
+  "name": "AnimalYears",
+  "version": "0.1.1",
+  "summary": "A short description of AnimalYears.",
+  "description": "This is a library for creating functions for converting pet years into animal years.",
+  "homepage": "https://github.com/davidfekke/AnimalYears",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "davidfekke": "david@fekke.com"
+  },
+  "source": {
+    "git": "https://github.com/davidfekke/AnimalYears.git",
+    "tag": "0.1.1"
+  },
+  "platforms": {
+    "ios": "14.0"
+  },
+  "swift_versions": "5.0",
+  "source_files": "Sources/AnimalYears/**/*",
+  "swift_version": "5.0"
+}
