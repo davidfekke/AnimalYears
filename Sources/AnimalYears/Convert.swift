@@ -10,14 +10,14 @@ import Foundation
 public struct Convert {
     
     public static func calculate(dogyears dogYears: Float, weight doggyWeight: Float) -> Float {
-        let focalLength: Float = 413.1781;
-        let startAge: Float = 25.48807;
-        let startIncOffset: Float = -2.35626;
-        let eqCorrection: Float = 134.9106;
-        let ageIncOff: Float = 2.369763;
-        let startAgeOffset: Float = 585.2361;
-        let cutOffYear: Float = 3;
-        let cutOffMonths: Float = cutOffYear * 12;
+        let focalLength: Float = 413.1781
+        let startAge: Float = 25.48807
+        let startIncOffset: Float = -2.35626
+        let eqCorrection: Float = 134.9106
+        let ageIncOff: Float = 2.369763
+        let startAgeOffset: Float = 585.2361
+        let cutOffYear: Float = 3
+        let cutOffMonths: Float = cutOffYear * 12
         var dogWeight = doggyWeight
         
         if dogWeight < 5 {
