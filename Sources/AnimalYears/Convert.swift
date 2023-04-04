@@ -7,8 +7,18 @@
 
 import Foundation
 
+// A utility class for converting actual years into cat and dog years
 public struct Convert {
     
+    /**
+     Calculates the human age equivalent of a dog's age and weight.
+     
+     - Parameters:
+        - dogYears: The dog's age in years.
+        - doggyWeight: The dog's weight in pounds.
+     
+     - Returns: The dog's age in human years.
+     */
     public static func calculate(dogyears dogYears: Float, weight doggyWeight: Float) -> Float {
         let focalLength: Float = 413.1781
         let startAge: Float = 25.48807
@@ -46,6 +56,14 @@ public struct Convert {
         return humanAge
     }
     
+    /**
+     Calculates the human age equivalent of a cat's age.
+     
+     - Parameters:
+        - originalCatAge: The cat's age in years.
+     
+     - Returns: The cat's age in human years.
+     */
     public static func calculate(catyears originalCatAge: Float) -> Float {
         return (originalCatAge>=2) ? (25+((originalCatAge-2)*4)) : (originalCatAge>1 ? ((originalCatAge-1)*10+15) : originalCatAge * 15)
     }
